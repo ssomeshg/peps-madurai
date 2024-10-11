@@ -124,23 +124,23 @@ a.more {
 }
 
 .hero {
-  background: #0e50a4;
-  background-image: url(../images/peps-shop-photo.jpg);
+  /* background: #0e50a4; */
+  /* background-image: url(../images/u3AJcvuGrtJg3QvRPqIkRmvQxpa89uHnswfeUqqA.jpg);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
-  background-size: cover;
-  /* height: 100%;
-  min-height: 80vh; */
-  padding: calc(12rem - 30px) 0 3rem 0;
+  background-size: cover; */
+   height: 100%;
+  min-height: 80vh;
+  padding: calc(8rem - 30px) 0 3rem 0;
 }
 @media (min-width: 768px) {
   .hero {
-    padding: calc(10rem - 30px) 0 4rem 0;
+    padding: calc(8rem - 30px) 0 4rem 0;
   }
 }
 @media (min-width: 992px) {
   .hero {
-    padding: calc(12rem - 30px) 0 8rem 0;
+    padding: calc(8rem - 30px) 0 8rem 0;
   }
 }
 .hero .intro-excerpt {
@@ -988,3 +988,16 @@ textarea {
 .blog-section .tns-nav button.tns-nav-active:before {
   background-color: #034ea1;
 }
+
+/* banner section */
+
+@media (max-width:768px) {
+  .h-desk{
+display: none;
+  }
+  .h-mobile{
+display: block !important;
+  }
+}
+
+
