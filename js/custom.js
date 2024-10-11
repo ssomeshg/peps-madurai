@@ -23,9 +23,10 @@
 	};
 	tinyslider();
 
+
 	var blogslider = function() {
 		var el = document.querySelectorAll('.blog-item');
-
+	
 		if (el.length > 0) {
 			var slider = tns({
 				container: '.blog-item',
@@ -34,17 +35,26 @@
 				controlsContainer: "#testimonial-nav",
 				swipeAngle: false,
 				speed: 700,
-				dots:false,
+				dots: false,
 				nav: true,
 				controls: true,
 				autoplay: true,
 				autoplayHoverPause: true,
 				autoplayTimeout: 2000,
-				autoplayButtonOutput: false
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1 // Show 1 item for screens smaller than 768px
+					},
+					768: {
+						items: 3 // Show 3 items for screens 768px and above
+					}
+				}
 			});
 		}
 	};
 	blogslider();
+	
 
 
 	var sitePlusMinus = function() {
