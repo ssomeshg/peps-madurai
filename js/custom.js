@@ -55,7 +55,37 @@
 	};
 	blogslider();
 	
-
+	var catalogueSlider = function() {
+		var el = document.querySelectorAll('.catalogue-item');
+	
+		if (el.length > 0) {
+			var slider = tns({
+				container: '.catalogue-item',
+				items: 3,
+				axis: "horizontal",
+				controlsContainer: "#testimonial-nav",
+				swipeAngle: false,
+				speed: 700,
+				dots: false,
+				nav: true,
+				controls: true,
+				autoplay: true,
+				autoplayHoverPause: true,
+				autoplayTimeout: 2000,
+				autoplayButtonOutput: false,
+				responsive: {
+					0: {
+						items: 1 // Show 1 item for screens smaller than 768px
+					},
+					768: {
+						items: 3 // Show 3 items for screens 768px and above
+					}
+				}
+			});
+		}
+	};
+	catalogueSlider();
+	
 
 	var sitePlusMinus = function() {
 
