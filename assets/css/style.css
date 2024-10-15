@@ -1,0 +1,26 @@
+.error {
+    color: red;
+}
+.flash-message_success {
+    color: green;
+}
+.flash-message_error {
+    color: red;
+}
+
+.layout-start{
+    position: relative;
+}
+.menu-bar{
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 1px 1px 10px #034ea1;
+}
+.menu-bar img{
+    width: 20px;
+}
+/* 696CFF */
